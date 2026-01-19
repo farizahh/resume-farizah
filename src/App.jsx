@@ -1,11 +1,14 @@
 import React from 'react'
-import Coba from './pages/Coba'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
 
 const App = () => {
   return (
-    <>
-      <Coba />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </Router>
   )
 }
 
