@@ -4,7 +4,7 @@ import LandingPage from './pages/LandingPage'
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/resume-farizah">
       <Routes>
         <Route path="/" element={<LandingPage />} />
       </Routes>
